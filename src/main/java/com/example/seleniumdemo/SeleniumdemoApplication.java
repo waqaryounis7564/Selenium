@@ -9,7 +9,9 @@ public class SeleniumdemoApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(SeleniumdemoApplication.class, args);
-        Demo.crawl();
+//        GBbackup gBbackup=new GBbackup();
+//        gBbackup.startBot();
+    Demo.crawl();
     }
 
 }
