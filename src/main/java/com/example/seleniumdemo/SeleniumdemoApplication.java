@@ -9,9 +9,13 @@ public class SeleniumdemoApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(SeleniumdemoApplication.class, args);
-//        GBbackup gBbackup=new GBbackup();
+        GBbackup gBbackup=new GBbackup();
 //        gBbackup.startBot();
-    Demo.crawl();
+        try {
+            GB.crawl();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }
